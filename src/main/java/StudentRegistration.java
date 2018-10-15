@@ -25,19 +25,16 @@ public class StudentRegistration{
 //        System.out.println("Enter your lastname: ");
 //        String lname = scanner.next();
 //        Student student = new Student(fname,lname);
-//        StudentDao studentDao = new StudentDao();
 //        studentDao.save(student);
 
         /**Get Student Record by ID**/
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter your user id: ");
-//        long userId = scanner.nextLong();
-//        StudentDao studentDao = new StudentDao();
-//        Student studentSelect = studentDao.getById(userId);
-//        System.out.println(studentSelect.getId()+", "+studentSelect.getFirstName()+", "+studentSelect.getLastName());
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your user id: ");
+        long userId = scanner.nextLong();
+        Student studentSelect = studentDao.getById(userId);
+        System.out.println(studentSelect.getId()+", "+studentSelect.getFirstName()+", "+studentSelect.getLastName());
 
         /**Get All Student Records**/
-//        StudentDao studentDao = new StudentDao();
 //        List<Student> students= studentDao.list();
 //        /**To retrieve values, you will have to use "for each" loop
 //         * to iterate through list**/
@@ -49,21 +46,20 @@ public class StudentRegistration{
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("Enter user id to delete: ");
 //        long userId = scanner.nextLong();
-//        StudentDao studentDao = new StudentDao();
 //        studentDao.delete(userId);
 //        System.out.println("Student deleted.");
 
         /**Update Student Record by ID**/
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter user id to update: ");
-        long userId = scanner.nextLong();
-        System.out.println("Enter firstname to update: ");
-        String fname = scanner.next();
-        System.out.println("Enter lastname to update: ");
-        String lname = scanner.next();
-        Student studentUpdate = new Student(fname,lname);
-        studentDao.update(studentUpdate,userId);
-        System.out.println("Student updated.");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter user id to update: ");
+//        long userId = scanner.nextLong();
+//        System.out.println("Enter firstname to update: ");
+//        String fname = scanner.next();
+//        System.out.println("Enter lastname to update: ");
+//        String lname = scanner.next();
+//        Student studentUpdate = new Student(fname,lname);
+//        studentDao.update(studentUpdate,userId);
+//        System.out.println("Student updated.");
 
 
     }
